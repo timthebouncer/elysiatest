@@ -6,8 +6,8 @@ import * as todoSchemas from '~/db/schemas/todo';
 import { env } from '~/env';
 
 const client = createClient({
-  url: env.DB_URL,
-  authToken: env.DB_AUTH_TOKEN,
+  url: 'http://localhost:3000',
+  // authToken: env.DB_AUTH_TOKEN,
 });
 export const db = drizzle(client, {
   logger: true,

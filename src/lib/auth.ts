@@ -34,11 +34,11 @@ export const authConfig: AuthConfig = {
   // @ts-expect-error Required since accounts.email is nullable (with minimal GitHub scope)
   adapter: modifiedDrizzleAdapter(),
   trustHost: true,
-  secret: env.AUTH_SECRET,
+  // secret: env.AUTH_SECRET,
   providers: [
     GitHub({
-      clientId: env.AUTH_GITHUB_ID,
-      clientSecret: env.AUTH_GITHUB_SECRET,
+      // clientId: env.AUTH_GITHUB_ID,
+      // clientSecret: env.AUTH_GITHUB_SECRET,
     }),
   ],
 };
